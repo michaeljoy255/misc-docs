@@ -88,7 +88,58 @@ Explanation
 
 # Modifying a pull request
 
-Explanation
+While it is reviewed by other contributors, you will often need to make changes to your yet-unmerged pull request, either because contributors requested them, or because you found issues yourself while testing.
+
+The good news is that you can modify a pull request simply by acting on the branch you made the pull request from. You can make a new commit on that branch, push it to your fork, and the pull request will be updated automatically
+
+However, fellow contributors may want a clean commit history. That means you'll need to squash your new commit with your old one so only a single commit is in the pull request. You will do this with an ammending commit or the interactive rebase command.
+
+1. Checkout the branch you will be making your modifications in
+
+   ```
+   git checkout <branch>
+   ```
+
+2. (Ammended Commit) Make the modification and commit it with an ammend
+
+   ```
+   notepad path/to/file.txt
+   git add path/to/file.txt
+   git commit --ammend
+   ```
+
+3. (Interactive Rebase) Make the modification, commit it, and perform an interactive rebase
+
+   ```
+   notepad path/to/file.txt
+   git add path/to/file.txt
+   git commit -m "Newest commit message"
+   ```
+   The HEAD~X syntax means X commits before HEAD
+   ```
+   git rebase -i HEAD~2
+   ```
+   This will open your text editor with the following:
+   ```
+   pick 1b4aad7 Older commit message
+   pick e07077e Newest commit message
+   ```
+   The editor will also show instructions on how you can act on those commits.
+   You will normally use "fixup" as shown below:
+   ```
+   pick 1b4aad7 Older commit message
+   fixup e07077e Newest commit message
+   ```
+
+4. Push the changes to your forked repository and the pull request will update automatically
+
+   ```
+   git push <remote> <local-branch>:<remote-branch>
+   ```
+   ##### Example:
+   ```
+   git push myfork dev:master
+   ```
 
 # Common Git commands
 

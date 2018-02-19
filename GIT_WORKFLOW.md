@@ -100,7 +100,7 @@ However, fellow contributors may want a clean commit history. That means you'll 
    git checkout <branch>
    ```
 
-2a. (Amended Commit) Make the modification and commit it with an amend
+2. (A)(Amended Commit) Make the modification and commit it with an amend
 
    ```
    notepad path/to/file.txt
@@ -108,7 +108,7 @@ However, fellow contributors may want a clean commit history. That means you'll 
    git commit --ammend
    ```
 
-2b. (Interactive Rebase) Make the modification, commit it, and perform an interactive rebase
+2. (B)(Interactive Rebase) Make the modification, commit it, and perform an interactive rebase
 
    ```
    notepad path/to/file.txt
@@ -131,7 +131,7 @@ However, fellow contributors may want a clean commit history. That means you'll 
    fixup e07077e Newest commit message
    ```
 
-4. Push the changes to your forked repository and the pull request will update automatically
+3. Push the changes to your forked repository and the pull request will update automatically
 
    ```
    git push <remote> <local-branch>:<remote-branch>

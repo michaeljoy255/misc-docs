@@ -1,7 +1,5 @@
 # My workflow for Git and GitHub
-What follows is a reasonable workflow for contributing to a project, or making
-changes to your own repositories. The sections are specific to certain tasks you
-may be trying to accomplish.
+What follows is a reasonable workflow for contributing to a project, or making changes to your own repositories. The sections are specific to certain tasks you may be trying to accomplish. This is based on my experience contributing to the Godot project.
 
 # Git and GitHub setup
 
@@ -60,9 +58,9 @@ Explanation
 
 # Pull request workflow
 
-Explanation
+It's time to make a pull request when you are ready to have your change to a project reviewed by somone. This process is outlined below.
 
-1. Make sure you local repository is up-to-date with your changes rebased on top
+1. Make sure your local repository is up-to-date with your changes rebased on top
 
    ```
    git pull --rebase <remote> <remote-branch>
@@ -84,8 +82,10 @@ Explanation
 
 3. Make a Pull Request to the original project from your fork
 
-   ...
-
+   Navigate to your fork of the project with the proper branch selected and find the following:
+   
+   ![Pull Request](https://github.com/michaeljoy255/misc-docs/blob/master/images/pull-request.png "Pull Request")
+   
 # Modifying a pull request
 
 While it is reviewed by other contributors, you will often need to make changes to your yet-unmerged pull request, either because contributors requested them, or because you found issues yourself while testing.
@@ -100,7 +100,7 @@ However, fellow contributors may want a clean commit history. That means you'll 
    git checkout <branch>
    ```
 
-2. (Ammended Commit) Make the modification and commit it with an ammend
+2a. (Amended Commit) Make the modification and commit it with an amend
 
    ```
    notepad path/to/file.txt
@@ -108,7 +108,7 @@ However, fellow contributors may want a clean commit history. That means you'll 
    git commit --ammend
    ```
 
-3. (Interactive Rebase) Make the modification, commit it, and perform an interactive rebase
+2b. (Interactive Rebase) Make the modification, commit it, and perform an interactive rebase
 
    ```
    notepad path/to/file.txt

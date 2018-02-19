@@ -143,6 +143,4 @@ However, fellow contributors may want a clean commit history. That means you'll 
 
 # Common Git commands
 
-Use Git Cheatsheet when lost.
-
-Common commands...
+Reference the Git Cheatsheet when you're having trouble. It is avaiable online in PDF format.

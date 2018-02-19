@@ -29,15 +29,15 @@ What follows is a reasonable workflow for contributing to a project, or making c
 
 # Initial repository setup
 
-Explanation
+How to setup a fork of another repository. Creating a new repository and cloning it locally is a similar process.
 
 1. Fork a project on GitHub or create a new repository
 
-   ...
+   ![Fork](https://github.com/michaeljoy255/misc-docs/blob/master/images/forkit.png "Fork")
 
 2. Clone the fork onto your local computer
 
-   ...
+   ![Clone](https://github.com/michaeljoy255/misc-docs/blob/master/images/cloneit.png "Clone")
 
 3. Setup remotes for the local repository
 

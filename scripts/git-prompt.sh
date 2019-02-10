@@ -40,3 +40,7 @@ fi
 PS1="$PS1"'\[\033[0m\]'        # change color to white
 PS1="$PS1"'$ '                 # prompt: always $
 MSYS2_PS1="$PS1"               # for detection by MSYS2 SDK's bash.basrc
+
+#------------------------------------------------------------------------------
+# Path to desired starting directory (depends on system)
+#cd <path here>

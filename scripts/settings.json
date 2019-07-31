@@ -6,21 +6,17 @@
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
 
-  // May need to be adjusted based on your machine
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
-  // Good size for laptop, use defaults on larger monitors
   "editor.fontSize": 12,
   "terminal.integrated.fontSize": 12,
   "markdown.preview.fontSize": 12,
   "markdown.preview.lineHeight": 1.4,
   "debug.console.fontSize": 12,
 
-  // Prettier settings
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "prettier.printWidth": 100,
 
-  // TypeScript settings
   "typescript.updateImportsOnFileMove.enabled": "always"
 }
